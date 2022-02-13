@@ -26,6 +26,6 @@ process convertAll {
     """
     echo $convertable_file
     mkdir converted
-    wine msconvert --mzML --32 -filter --zlib "peakPicking true" $convertable_file --outfile ${convertable_file} --outdir converted
+    wine msconvert --mzML --32 -filter --zlib "peakPicking true" $convertable_file --outfile ${convertable_file}.mzML --outdir converted
     """
 }
